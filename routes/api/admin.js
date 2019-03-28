@@ -4,6 +4,8 @@ var router = express.Router();
 const adminModel = require('../../models/admin')
 let tokengn = require('tokengn')
 
+const Promise = require('bluebird');
+
 //GET http://localhost:3000/api/admin/piezas
 router.get('/piezas', (req,res) => {
     adminModel.getAllPiezas(async (err,rowsp)=>{

@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+const Promise = require('bluebird');
+
 const piezasModel = require('../../models/pieza')
 
 //Obtener la lista de piezas -- Angular: componente galería
