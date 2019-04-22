@@ -1,0 +1,639 @@
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: 1em;
+  }
+
+/* menu dropdown */
+/* parte superior div */
+.titulo{
+  height: 24px;
+  color: black;
+  font-size: 1em;
+  font-family: titania;
+  border-bottom: 1px solid black;
+  margin-top:-10px;
+}
+/* parte contenido div */
+div .dropdown-menu.show{
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  margin-top:5%;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 575.98px)
+{
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  }
+.container{
+  width: 10%;
+}
+/* Icon-home__inside the navbar */ 
+.navbar-brand {
+  margin-left: -2em;
+}
+.navbar-brand img{
+  width:2em;
+}
+
+/* desplegable CONTENEDOR */
+.nav-item, .contact1{
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.nav-item:hover, .contact1:hover{
+  background-color:mediumspringgreen; /* mediumpurple */
+}
+.nav a {
+  font-size: 3em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Icon__REGISTRO */ 
+.contact{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-family: titania;
+  font-size: 1.2em;
+  background-color: none;
+  height: 33px;
+}
+.contact:hover{
+  text-decoration: none;
+  color:blue;
+}
+
+/* CONTENEDOR navbar contraido: menu dropdown */
+div.navbar-collapse.show{
+  margin-top: 2%;
+  width: 30%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:1%;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition:0.2s;
+}
+/* parte contenido div */
+div .dropdown-menu.show{
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  margin-top:-2%;
+  margin-left:10%;
+}
+
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  }
+.container{
+  width: 10%;
+}
+/* Icon-home__inside the navbar */ 
+.navbar-brand {
+  margin-left: -2em;
+}
+.navbar-brand img{
+  width:1.6em;
+}
+/* icono toggler */
+
+/* desplegable CONTENEDOR */
+.nav-item, .contact1{
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+ 
+.nav-item:hover, .contact1:hover{
+  background-color:mediumspringgreen; /* mediumpurple */
+}
+.nav a {
+  font-size: 3em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Icon__REGISTRO */ 
+.contact{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-family: titania;
+  font-size: 1.2em;
+  background-color: none;
+  height: 33px;
+}
+.contact:hover{
+  text-decoration: none;
+  color:blue; 
+}
+
+/* CONTENEDOR navbar contraido: menu dropdown */
+div.navbar-collapse.show{
+  margin-top: 2%;
+  width: 30%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:1%;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition:0.2s;
+}
+/* parte contenido div */
+div .dropdown-menu.show{
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  margin-top:-2%;
+  margin-left:8%;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  }
+.container{
+  width: 10%;
+}
+/* Icon-home__inside the navbar */ 
+.navbar-brand {
+  margin-left: -2em;
+}
+.navbar-brand img{
+  width:1.6em;
+}
+/* icono toggler */
+
+/* desplegable CONTENEDOR */ 
+.nav-item, .contact1{
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.nav-item:hover, .contact1:hover{
+  background-color:mediumspringgreen; /* mediumpurple */
+}
+.nav a {
+  font-size: 3em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Icon__REGISTRO */ 
+.contact{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-family: titania;
+  font-size: 1.2em;
+  background-color: none;
+  height: 33px;
+}
+.contact:hover{
+  text-decoration: none;
+  color:blue; 
+}
+
+/* CONTENEDOR navbar contraido: menu dropdown */
+div.navbar-collapse.show{
+  width: 30%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:1%;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  transition:0.2s;
+}
+
+/* parte contenido div */
+div .dropdown-menu.show{
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  margin-top:-2%;
+  margin-left:5%;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  }
+.container{
+  width: 10%;
+}
+/* Icon-home__inside the navbar */ 
+.navbar-brand {
+  margin-left: -1em;
+}
+.navbar-brand img{
+  width:2em;
+}
+/* Icons__inside the navbar */ 
+.nav a {
+    float: left;
+    font-size: 3em;
+    text-decoration: none;
+  }
+.men{
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: mediumspringgreen;
+}
+
+/* Icon__REGISTRO */ 
+.contact{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-family: titania;
+  font-size: 1.2em;
+}
+.contact:hover{
+  text-decoration: none;
+  color:blue; 
+  /*text-decoration: underline; 
+  /* text-decoration-style: wavy; */
+}
+
+/* ANIMATIONS */
+.animation1{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation1:hover{
+  -moz-transform: scale(1);
+  -webkit-transform:translate(0px, 20px) scale(1);
+  -o-transform:translate(0px, 20px) scale(1);
+  -ms-transform:translate(0px, 20px) scale(1);
+  transform:translate(0px, 20px) scale(1);
+}
+
+.animation2{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation2:hover{
+  -moz-transform: scale(1.1) rotate(40deg);
+  -webkit-transform: scale(1.1) rotate(40deg);
+  -o-transform: scale(1.1) rotate(40deg);
+  -ms-transform: scale(1.1) rotate(40deg);
+  transform: scale(1.1) rotate(40deg);
+}
+
+.animation3{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation3:hover{
+  -moz-transform: translate(0px, -10px) rotate(-20deg);
+  -webkit-transform: translate(0px, -10px) rotate(-20deg);
+  -o-transform: translate(0px, -10px) rotate(-20deg);
+  -ms-transform: translate(0px, -10px) rotate(-20deg);
+  transform: translate(0px, -10px) rotate(-20deg);
+}
+
+/* .animation4{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+} */
+
+/* .animation4:hover{
+  -moz-transform: scale(1.1) rotate(90deg);
+  -webkit-transform: scale(1.1) rotate(90deg);
+  -o-transform: scale(1.1) rotate(90deg);
+  -ms-transform: scale(1.1) rotate(90deg);
+  transform: scale(1.1) rotate(90deg);
+} */
+
+.animation1{
+  animation: bounce 1.5s infinite;
+  transform: rotate(0deg);
+  -webkit-animation: bounce 1.5s infinite;
+  -webkit-transform: rotate(0deg);
+  
+}
+.animation2{
+  animation: rot2 2s infinite alternate-reverse;
+  transform: rotate(-30deg);
+  -webkit-animation: rot2 2s infinite alternate-reverse;
+  -webkit-transform: rotate(-30deg);
+}
+.animation3{
+  animation: rot3 3s infinite alternate-reverse;
+  /* transform: rotate(60deg); */
+  -webkit-animation: rot3 3s infinite alternate-reverse;
+  /* -webkit-transform: rotate(60deg); */
+}
+.animation4{
+  animation: shake 1.3s infinite;
+  transform: rotate(8deg);
+  -webkit-animation: shake 1.3s infinite;
+  -webkit-transform: rotate(-8deg);
+}
+/* animacion1 */
+@-webkit-keyframes bounce {
+  0% {-webkit-transform:translate3d(0, -400px, 0); -webkit-animation-timing-function: ease-in; }
+ 40% {-webkit-transform:translate3d(0,    0px, 0); -webkit-animation-timing-function: ease-out; }
+ 55% {-webkit-transform:translate3d(0, -100px, 0); -webkit-animation-timing-function: ease-in; }
+ 70% {-webkit-transform:translate3d(0,    0px, 0); -webkit-animation-timing-function: ease-out; }
+ 85% {-webkit-transform:translate3d(0,  -40px, 0); -webkit-animation-timing-function: ease-in; }
+100% {-webkit-transform:translate3d(0,    0px, 0); }
+}
+
+@-webkit-keyframes rotate{
+   0% {-webkit-transform:translate3d(-45deg, 0, 0); -webkit-animation-timing-function: ease-in; }
+ 50% {-webkit-transform:translate3d(45deg,   0, 0); -webkit-animation-timing-function: ease-out; } 
+ 100% {-webkit-transform:translate3d(0deg, 0, 0);} 
+}
+
+/* animacion2 */
+@keyframes rot2{
+  to{
+      transform: rotate(-30deg);
+  }
+  from{
+    transform: rotate(30deg);
+}
+}
+/* animacion3 */
+@keyframes rot3{
+  0%{
+    transform: rotate(90deg);
+    }
+  /* 50%{
+    transform: rotate(0deg);
+    } */
+100%{
+    transform: rotate(-90deg);
+    }
+}
+
+/* animcaion4 */
+@keyframes shake{
+  50%{
+  transform: rotate(5deg);
+}
+}
+
+.animation1:hover, .animation2:hover, .animation3:hover, .animation4:hover {
+  animation: 0s;
+  transform: rotate(0deg);
+  -webkit-animation: 0s ;
+  -webkit-transform: rotate(0deg);
+
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  }
+.container{
+  width: 10%;
+}
+/* Icon-home__inside the navbar */ 
+.navbar-brand {
+  margin-left: -1em;
+}
+.navbar-brand img{
+  width:2em;
+}
+/* Icons__inside the navbar */ 
+.nav a {
+    float: left;
+    font-size: 3em;
+    text-decoration: none;
+  }
+.men{
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.dropdown-item, .dropdown-item{
+  transition: 0.8s;
+  transition-property: initial;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: mediumspringgreen;
+}
+
+/* Icon__REGISTRO */ 
+.contact{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  font-family: titania;
+  font-size: 1.2em;
+}
+.contact:hover{
+  text-decoration: none;
+  color:blue; 
+  /*text-decoration: underline; 
+  /* text-decoration-style: wavy; */
+}
+
+/* ANIMATIONS */
+.animation1{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation1:hover{
+  -moz-transform: scale(1);
+  -webkit-transform:translate(0px, 20px) scale(1);
+  -o-transform:translate(0px, 20px) scale(1);
+  -ms-transform:translate(0px, 20px) scale(1);
+  transform:translate(0px, 20px) scale(1);
+}
+
+.animation2{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation2:hover{
+  -moz-transform: scale(1.1) rotate(40deg);
+  -webkit-transform: scale(1.1) rotate(40deg);
+  -o-transform: scale(1.1) rotate(40deg);
+  -ms-transform: scale(1.1) rotate(40deg);
+  transform: scale(1.1) rotate(40deg);
+}
+
+.animation3{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+}
+
+.animation3:hover{
+  -moz-transform: translate(0px, -10px) rotate(-20deg);
+  -webkit-transform: translate(0px, -10px) rotate(-20deg);
+  -o-transform: translate(0px, -10px) rotate(-20deg);
+  -ms-transform: translate(0px, -10px) rotate(-20deg);
+  transform: translate(0px, -10px) rotate(-20deg);
+}
+
+/* .animation4{
+  -moz-transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  transition: 0.3s;
+} */
+
+/* .animation4:hover{
+  -moz-transform: scale(1.1) rotate(90deg);
+  -webkit-transform: scale(1.1) rotate(90deg);
+  -o-transform: scale(1.1) rotate(90deg);
+  -ms-transform: scale(1.1) rotate(90deg);
+  transform: scale(1.1) rotate(90deg);
+} */
+
+.animation1{
+  animation: bounce 1.5s infinite;
+  transform: rotate(0deg);
+  -webkit-animation: bounce 1.5s infinite;
+  -webkit-transform: rotate(0deg);
+  
+}
+.animation2{
+  animation: rot2 2s infinite alternate-reverse;
+  transform: rotate(-30deg);
+  -webkit-animation: rot2 2s infinite alternate-reverse;
+  -webkit-transform: rotate(-30deg);
+}
+.animation3{
+  animation: rot3 3s infinite alternate-reverse;
+  /* transform: rotate(60deg); */
+  -webkit-animation: rot3 3s infinite alternate-reverse;
+  /* -webkit-transform: rotate(60deg); */
+}
+.animation4{
+  animation: shake 1.3s infinite;
+  transform: rotate(8deg);
+  -webkit-animation: shake 1.3s infinite;
+  -webkit-transform: rotate(-8deg);
+}
+/* animacion1 */
+@-webkit-keyframes bounce {
+  0% {-webkit-transform:translate3d(0, -400px, 0); -webkit-animation-timing-function: ease-in; }
+ 40% {-webkit-transform:translate3d(0,    0px, 0); -webkit-animation-timing-function: ease-out; }
+ 55% {-webkit-transform:translate3d(0, -100px, 0); -webkit-animation-timing-function: ease-in; }
+ 70% {-webkit-transform:translate3d(0,    0px, 0); -webkit-animation-timing-function: ease-out; }
+ 85% {-webkit-transform:translate3d(0,  -40px, 0); -webkit-animation-timing-function: ease-in; }
+100% {-webkit-transform:translate3d(0,    0px, 0); }
+}
+
+@-webkit-keyframes rotate{
+   0% {-webkit-transform:translate3d(-45deg, 0, 0); -webkit-animation-timing-function: ease-in; }
+ 50% {-webkit-transform:translate3d(45deg,   0, 0); -webkit-animation-timing-function: ease-out; } 
+ 100% {-webkit-transform:translate3d(0deg, 0, 0);} 
+}
+
+/* animacion2 */
+@keyframes rot2{
+  to{
+      transform: rotate(-30deg);
+  }
+  from{
+    transform: rotate(30deg);
+}
+}
+/* animacion3 */
+@keyframes rot3{
+  0%{
+    transform: rotate(90deg);
+    }
+  /* 50%{
+    transform: rotate(0deg);
+    } */
+100%{
+    transform: rotate(-90deg);
+    }
+}
+
+/* animcaion4 */
+@keyframes shake{
+  50%{
+  transform: rotate(5deg);
+}
+}
+
+.animation1:hover, .animation2:hover, .animation3:hover, .animation4:hover {
+  animation: 0s;
+  transform: rotate(0deg);
+  -webkit-animation: 0s ;
+  -webkit-transform: rotate(0deg);
+
+}
+   
+}
