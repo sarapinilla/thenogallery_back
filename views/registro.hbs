@@ -1,0 +1,177 @@
+<!-- {{formRegistro.valid}} -->
+<h2 class="header ml-4 pb-2 mt-4 mb-5 text-left">
+  Registra tu <span class="titania">pieza</span>! 
+</h2>
+<!-- 🥩🥩 -->
+<!-- Observables subida file: -->
+{{!-- <p> {{uploadPercent | async}}</p> --}}
+
+<div class="container">
+  <form novalidate
+  [formGroup]="formRegistro"
+  (ngSubmit)="manejarFormulario()">
+
+    <div class="form row">
+      
+      <!-- info1 -->
+      <div class="col-md-4 mb-5">
+        <h3 class="mb-3 titania">1➫Pieza</h3>
+        <p class="info mb-5">
+          Qué bien! Así que quieres unirte a nuestra familia?!! Estamos emocionados 🥳 <br> Empecemos con tu obra <span class="titania">(pieza) :</span><br>
+          <br>
+          <span class="titania">a.</span><br> TÍTULO: dinos su nombre <br>INFO: hablános un poco de ella.<br>COVER: elige la foto de portada<br>PIEZA: súbela a nuestra plataforma.<br>CATEGORIAS: selecciona hasta <span class="titania">3</span> categorías que encajen con ella! <br>
+          <br>
+          <span class="titania">b.</span><br>Al recibir tu petición, <br>la validaremos y en un período máximo de 5 días recibirás una respuesta! <br>
+        </p>
+      </div>
+      <!-- 1-FORM PIEZA -->
+        <div class="col-md-5 mb-5"> 
+          <!--título-->
+          <div class="form-group ">
+            <label>título</label><br>
+            <!-- validaciones -->
+            <small > ⚠️ Oh vaya,campo obligatorio
+            </small>
+            <small> ⚠️ Upss,titulo tiene una extensión máx. de XXXXX ,actualmente hay escritos XXXXX
+            </small>
+            <input class="mb-4" type="text" formControlName="titulopieza">
+          </div>
+          
+          <!--textarea INFO-->
+          <div class="form-group ">
+            <label>info</label><br>
+            <!-- validaciones -->
+            <small> ⚠️ Oh vaya,campo obligatorio
+            </small>
+            <small> ⚠️ Upss,info tiene una extensión máx. de XXXXX ,actualmente hay escritos XXXXXX
+            </small>
+            <textarea class="form-control mb-4" type="textarea" formControlName="infopieza" id="textarea1" rows="4"></textarea>
+          </div>
+
+          <!-- COVER | PIEZA -->
+            <!-- COVER -->
+          <div class="form row mb-4">
+            <label class="mb-4">cover
+              <p class="info2 mt-2">Imagen de portada de tu pieza:
+                Elige tus archivos extensión
+                <span class="titania"> .jpg/.gif/.png</span> :
+              </p><br>
+              <!-- Para visualizar la imagen subida: -->
+              <img class="previsualizacionfile mb-2" [src]="coverUrlImagen" *ngIf="coverUrlImagen">
+              <input class="btn custom-boton insertfile" type="file" name="coverpic" (change)="onChangeImage($event)" formControlName="coverpic"> 
+            </label>
+             <!-- PIEZA -->
+            <label class="mb-4"> pieza
+
+              <p class="info2 mt-2">
+                Url de tu pieza (en caso de video o audio) o archivo
+                <span class="titania"> .jpg/.gif/.png</span> :
+              </p><br>
+
+              <input class="mb-2" formControlName="URLpieza" type="url" placeholder="http://www.example.com">
+
+              <!-- Para visualizar la imagen subida: -->
+              <img class="previsualizacionfile mb-2" [src]="piezaUrlImagen" *ngIf="piezaUrlImagen">
+              <input class="btn custom-boton insertfile" type="file" name="piezapic" (change)="onChangeImage($event)" formControlName="piezapic"> 
+            </label>
+          </div>
+
+          <!-- multiple select CATEGORIAS -->
+          <p class="mb-2" >categorías:</p><br>
+          <div class="form-group row">   
+            <div class="col-md-6 row" *ngFor= "let cat of categorias['controls']; let i=index">
+              <input class="form-check-input single-cb" (change)="checkCat($event)" type="checkbox" [formControl]="cat" [checked]/> 
+              <label class="col-md-6 ml-2 mb-3 categoriaslabel"> CHECK-TEST</label>
+            </div> 
+          </div>
+        </div>
+
+        <!-- info2 -->
+      <div class="col-md-4  mt-5">
+          <h3 class="mb-3 titania">2➫Autor</h3>
+          <p class="info mb-5">
+              <span class="titania">a.</span> <br>
+              Ahora el protagonista eres tú,rellena los campos con tu nombre artístico,
+              tu email, un poco de info sobre ti, y tu foto de perfil.<br> Todos estos campos son obligatorios. <br>
+              <span class="titania">b.</span> <br> Estos campos no son obligatorios, pero sí muy importantes, no olvides añadir tus redes!!
+            </p>
+      </div>
+        <!-- 2-form -->
+      <div class="col-md-5 mt-5"> 
+        <!-- NOMBRE -->
+        <div class="form-group">
+          <label>nombre</label><br>
+          <!-- validaciones -->
+
+          <small> ⚠️ Oh vaya,campo obligatorio
+          </small>
+
+          <small> ⚠️ Upss,titulo tiene una extensión máx. de XXXXX ,actualmente hay escritos XXXXXX
+          </small>
+          <input class="mb-4" type="text" formControlName="nombreautor">
+        </div>
+        <!-- MAIL -->
+        <div class="form-group">
+        <label>mail</label><br>
+        <!-- validaciones -->
+        <small> ⚠️ Oh vaya,campo obligatorio
+        </small>
+        <input class="mb-4" type="email" formControlName="email"><br>
+        </div>
+        
+        <!-- INFO -->
+        <div class="form-group ">
+          <label>info</label><br>
+          <!-- validaciones -->
+          <small> ⚠️ Oh vaya,campo obligatorio
+          </small>
+
+          <small> ⚠️Upss, campo info tiene una extensión máx. de XXXXXX ,actualmente hay escritos XXXXX
+          </small>
+          <textarea class="form-control mb-4" type="textarea" formControlName="infoautor" id="textarea2" rows="3"></textarea>
+        </div>
+        <!-- FOTO PERFIL -->
+        <div class="form row mb-4">
+          <label>foto perfil <br>
+            <!-- Para visualizar la imagen subida: -->
+            <img class="previsualizacionfile mb-2 mt-2" [src]="autorUrlImagen" *ngIf="autorUrlImagen">
+            <input class="btn custom-boton insertfile mt-2" type="file" name="autorpic" (change)="onChangeImage($event)" formControlName="autorpic">
+          </label>
+        </div>
+        <!-- RRSS -->
+        <div class="form-group ">
+          <label>rrss</label><br>
+
+          <div class="input-group mb-2">
+              <div class="input-group-prepend row">
+                <span class="input-group-text" id="basic-addon3">
+                https://www.instagram.com/</span>
+              </div>
+              <input type="text" formControlname="ig" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+          <div class="input-group mb-2">
+              <div class="input-group-prepend row">
+                <span class="input-group-text" id="basic-addon3">
+                    https://www.behance.net/</span>
+              </div>
+              <input type="text" formControlName="be" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+          <div class="input-group mb-2">
+              <div class="input-group-prepend row">
+                <span class="input-group-text" id="basic-addon3">
+                https://www.</span>
+              </div>
+              <input type="text" formControlName="web" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- BOTON -->
+    <button class="form-group col-md-2 col-sm-3 fluid-text text-center" type="submit" [disabled]="true"> Registrar </button> 
+  </form>
+  </div>
+
+  <footer></footer>
